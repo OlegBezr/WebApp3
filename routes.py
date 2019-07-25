@@ -1,4 +1,5 @@
 from flask import Flask, flash, render_template, request, url_for, redirect, jsonify, session
+from flask_heroku import Heroku
 from models import db, User, User, Post
 from forms import SignupForm, LoginForm, NewpostForm
 from passlib.hash import sha256_crypt
